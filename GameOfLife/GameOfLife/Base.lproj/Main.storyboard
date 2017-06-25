@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-Dz-FYe">
+                                <rect key="frame" x="192.5" y="627" width="172.5" height="30"/>
+                                <state key="normal" title="ramdon steps"/>
+                                <connections>
+                                    <action selector="randomSteps:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfV-ol-ci0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-nd-9od">
+                                <rect key="frame" x="10" y="627" width="172.5" height="30"/>
+                                <state key="normal" title="next step"/>
+                                <connections>
+                                    <action selector="nextStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l91-d0-OmQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2I-Fp-zUY">
+                                <rect key="frame" x="192.5" y="587" width="172.5" height="30"/>
+                                <state key="normal" title="reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p2A-lx-Vmc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKG-TF-c97">
+                                <rect key="frame" x="10" y="587" width="172.5" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiS-n5-HkG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xRc-Dz-FYe" secondAttribute="bottom" constant="10" id="61N-NT-zoP"/>
+                            <constraint firstItem="F2I-Fp-zUY" firstAttribute="leading" secondItem="vKG-TF-c97" secondAttribute="trailing" constant="10" id="6oW-9W-agh"/>
+                            <constraint firstItem="Xdh-nd-9od" firstAttribute="top" secondItem="vKG-TF-c97" secondAttribute="bottom" constant="10" id="8Iy-hm-98U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xdh-nd-9od" secondAttribute="bottom" constant="10" id="AhG-mo-L5e"/>
+                            <constraint firstAttribute="trailing" secondItem="xRc-Dz-FYe" secondAttribute="trailing" constant="10" id="Kg4-r9-H7Z"/>
+                            <constraint firstItem="xRc-Dz-FYe" firstAttribute="top" secondItem="F2I-Fp-zUY" secondAttribute="bottom" constant="10" id="Qhd-1s-bfA"/>
+                            <constraint firstItem="xRc-Dz-FYe" firstAttribute="height" secondItem="vKG-TF-c97" secondAttribute="height" id="Ry2-hI-Yjb"/>
+                            <constraint firstAttribute="trailing" secondItem="F2I-Fp-zUY" secondAttribute="trailing" constant="10" id="TN5-7F-c5D"/>
+                            <constraint firstItem="vKG-TF-c97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="XGe-An-IIM"/>
+                            <constraint firstItem="F2I-Fp-zUY" firstAttribute="width" secondItem="vKG-TF-c97" secondAttribute="width" id="YaW-Ty-IJC"/>
+                            <constraint firstItem="Xdh-nd-9od" firstAttribute="height" secondItem="vKG-TF-c97" secondAttribute="height" id="dG3-t7-h37"/>
+                            <constraint firstItem="Xdh-nd-9od" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="dUr-Qt-CP6"/>
+                            <constraint firstItem="xRc-Dz-FYe" firstAttribute="width" secondItem="vKG-TF-c97" secondAttribute="width" id="k23-gO-VWG"/>
+                            <constraint firstItem="F2I-Fp-zUY" firstAttribute="height" secondItem="vKG-TF-c97" secondAttribute="height" id="t0Y-Su-2be"/>
+                            <constraint firstItem="Xdh-nd-9od" firstAttribute="width" secondItem="vKG-TF-c97" secondAttribute="width" id="vHe-dY-l2Z"/>
+                            <constraint firstItem="xRc-Dz-FYe" firstAttribute="leading" secondItem="Xdh-nd-9od" secondAttribute="trailing" constant="10" id="zPA-Lb-bcy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

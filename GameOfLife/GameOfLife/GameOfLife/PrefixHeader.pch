@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  GameOfLife
+//
+//  Created by 孙荣乾 on 2017/6/25.
+//  Copyright © 2017年 sunrongqian. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define SIZE 20  //游戏尺度
+#define MARGIN  10   //游戏器皿边距
+#define RANDUM 8   //初代细胞密集度
+
+#define GAMEWIDTH  ([UIScreen mainScreen].bounds.size.width-MARGIN) //游戏器皿宽高
+#define GAMEHEIGHT  GAMEWIDTH
+
+#define BEDWIDTH  GAMEWIDTH/SIZE   //细胞网格宽高
+#define BEDHEIGHT GAMEHEIGHT/SIZE
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
